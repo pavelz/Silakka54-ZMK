@@ -1,4 +1,7 @@
 # Silakka54 ZMK Configuration
+weird setup 
+<img width="1687" height="719" alt="image" src="https://github.com/user-attachments/assets/3410f6a4-a3b3-4bf6-ad59-2afb040f7afb" />
+
 
 A ZMK firmware configuration for the **Silakka54** split ergonomic keyboard.
 
