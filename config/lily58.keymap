@@ -170,6 +170,20 @@
                 // 54 55 56 57  // thumb cluster right
             >;
         };
+
+        dbt_btallclear: dbt_btallclear {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DBT_BTALLCLEAR";
+            #binding-cells = <0>;
+            bindings = <&none>, <&bt BT_CLR_ALL>;
+        };
+
+        dbt_btclearone: dbt_btclearone {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DBT_BTCLEARONE";
+            #binding-cells = <0>;
+            bindings = <&none>, <&bt BT_CLR>;
+        };
     };
 
     keymap {
@@ -231,11 +245,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &trans        &trans        &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans           &trans        &trans        &trans        &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&dbt_btclearone  &dbt_btallclear  &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                &trans        &trans        &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
