@@ -219,13 +219,23 @@
             >;
         };
 
-        layer_shift-esab {
+        layer_4 {
             bindings = <
-&kp LS(MINUS)  &kp LS(N0)           &kp LS(N9)         &kp LS(N8)           &kp LS(N7)         &kp LS(N6)                     &kp RS(N5)     &kp RS(N4)        &kp RS(N3)       &kp RS(N2)       &kp RS(N1)        &kp RS(GRAVE)
-&kp LS(EQUAL)  &kp LS(P)            &kp LS(O)          &kp LS(I)            &kp LS(U)          &kp LS(Y)                      &kp RS(T)      &kp RS(R)         &kp RS(E)        &kp RS(W)        &kp RS(Q)         &kp RS(ESC)
-&kp LS(SQT)    &kp LS(SEMI)         &kp LS(L)          &kp LS(K)            &kp LS(J)          &kp LS(H)                      &kp RS(G)      &kp RS(F)         &kp RS(D)        &kp RS(S)        &kp RS(A)         &kp RS(LBKT)
-&kp LS(BSLH)   &hml RCTRL LS(FSLH)  &hml RALT LS(DOT)  &hml RCMD LS(COMMA)  &hml RSHFT LS(M)   &kp LS(N)      &none    &none  &kp RS(B)      &hmr LSHFT RS(V)  &hmr LCMD RS(C)  &hmr LALT RS(X)  &hmr LCTRL RS(Z)  &kp RS(RBKT)
-                                                       &kp LS(SPACE)        &kp LS(BACKSPACE)  &kp LS(ENTER)  &none    &none  &kp RS(GRAVE)  &kp RS(TAB)       &kp RS(SPACE)
+&kp F12  &kp F1  &kp F2  &kp F3                &kp F4                &kp F5                       &kp F6           &kp F7          &kp F8           &kp F9           &kp F10        &kp F11
+&trans   &trans  &trans  &mkp MCLK             &mkp LCLK             &mkp RCLK                    &mmv MOVE_RIGHT  &mmv MOVE_DOWN  &mmv MOVE_UP     &mmv MOVE_RIGHT  &mkp LCLK      &kp F12
+&trans   &trans  &trans  &trans                &trans                &trans                       &kp LEFT         &kp DOWN        &kp UP           &kp RIGHT        &kp PAGE_UP    &kp C_AC_HOME
+&trans   &trans  &trans  &trans                &trans                &trans     &trans    &trans  &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_UP     &msc SCRL_RIGHT  &kp PAGE_DOWN  &kp END
+                         &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans     &trans    &trans  &trans           &kp C_VOL_DN    &kp C_VOLUME_UP
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
