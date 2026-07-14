@@ -304,5 +304,15 @@
                         &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans
             >;
         };
+
+        misc {
+            bindings = <
+&trans  &trans  &trans  &kp LA(LG(F5))  &trans         &trans                                &trans          &trans                &trans                &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans         &trans                                &trans          &trans                &trans                &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans         &trans                                &trans          &trans                &trans                &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans         &trans              &trans    &trans  &trans          &trans                &trans                &trans  &trans  &trans
+                        &kp LA(LEFT)    &kp LA(RIGHT)  &kp LS(LC(LG(F4)))  &trans    &trans  &kp LG(LS(F5))  &kp LS(LA(C_VOL_DN))  &kp LS(LA(C_VOL_UP))
+            >;
+        };
     };
 };
