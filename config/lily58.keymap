@@ -200,6 +200,23 @@
         };
     };
 
+    macros {
+        ctrl_a_and: ctrl_a_and {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LCTRL &macro_param_1to1>,
+                <&macro_tap>;
+
+            label = "CTRL_A_AND";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -208,7 +225,7 @@
             bindings = <
 &kp GRAVE           &kp N1        &kp N2       &kp N3        &kp N4            &kp N5                        &kp N6        &kp N7         &kp N8           &kp N9         &kp N0           &kp BACKSPACE
 &kp TAB             &kp Q         &kp W        &kp E         &kp R             &kp T                         &kp Y         &kp U          &kp I            &kp O          &kp P            &kp BACKSLASH
-&kp LCTRL           &kp A         &kp S        &kp D         &kp F             &kp G                         &kp H         &kp J          &kp K            &kp L          &kp SEMI         &kp SQT
+&kp LCTRL           &lt 6 A       &kp S        &kp D         &kp F             &kp G                         &kp H         &kp J          &kp K            &kp L          &kp SEMI         &kp SQT
 &kp RS(LEFT_SHIFT)  &hml LCTRL Z  &hml LALT X  &hml LCMD C   &hml LSHFT V      &kp B         &none    &none  &kp N         &hmr RSHFT M   &hmr RCMD COMMA  &hmr RALT DOT  &hmr RCTRL FSLH  &kp ESC
                                                &mll 1 SPACE  &kp LEFT_COMMAND  &mll 4 SPACE  &none    &none  &mlr 2 ENTER  &kp RIGHT_ALT  &mlr 1 SPACE
             >;
@@ -267,13 +284,13 @@
             >;
         };
 
-        layer_6 {
+        tmux {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans         &ctrl_a_and 1  &ctrl_a_and 2  &ctrl_a_and 3  &ctrl_a_and 4  &ctrl_a_and 5                    &trans         &trans         &trans         &trans         &trans  &trans
+&trans         &trans         &ctrl_a_and W  &trans         &trans         &ctrl_a_and T                    &trans         &trans         &trans         &trans         &trans  &trans
+&ctrl_a_and Z  &trans         &ctrl_a_and S  &trans         &trans         &trans                           &ctrl_a_and H  &ctrl_a_and J  &ctrl_a_and K  &ctrl_a_and L  &trans  &trans
+&trans         &ctrl_a_and Z  &trans         &ctrl_a_and C  &trans         &trans         &trans    &trans  &trans         &trans         &trans         &trans         &trans  &trans
+                                             &trans         &trans         &trans         &trans    &trans  &trans         &trans         &trans
             >;
         };
     };
