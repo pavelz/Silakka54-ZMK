@@ -289,7 +289,7 @@
             bindings = <
 &trans         &ctrl_a_and NUMBER_1  &ctrl_a_and NUMBER_2  &ctrl_a_and NUMBER_3  &ctrl_a_and NUMBER_4  &ctrl_a_and NUMBER_5                    &trans         &trans         &trans         &trans         &trans  &trans
 &trans         &trans                &ctrl_a_and W         &trans                &trans                &ctrl_a_and T                           &trans         &trans         &trans         &trans         &trans  &trans
-&ctrl_a_and Z  &trans                &ctrl_a_and S         &trans                &trans                &trans                                  &ctrl_a_and H  &ctrl_a_and J  &ctrl_a_and K  &ctrl_a_and L  &trans  &trans
+&ctrl_a_and Z  &trans                &ctrl_a_and S         &ctrl_a_and D         &trans                &trans                                  &ctrl_a_and H  &ctrl_a_and J  &ctrl_a_and K  &ctrl_a_and L  &trans  &trans
 &trans         &ctrl_a_and Z         &trans                &ctrl_a_and C         &trans                &trans                &trans    &trans  &trans         &trans         &trans         &trans         &trans  &trans
                                                            &trans                &trans                &trans                &trans    &trans  &trans         &trans         &trans
             >;
