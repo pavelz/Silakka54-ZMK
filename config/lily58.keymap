@@ -307,11 +307,11 @@
 
         misc {
             bindings = <
-&trans  &trans  &trans  &kp LA(LG(F5))  &trans         &trans                                      &trans          &trans                &trans                &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans         &trans                                      &trans          &trans                &trans                &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans         &trans                                      &trans          &trans                &trans                &trans  &trans  &trans
-&trans  &trans  &trans  &trans          &trans         &trans                    &trans    &trans  &trans          &trans                &trans                &trans  &trans  &trans
-                        &kp LA(LEFT)    &kp LA(RIGHT)  &kp LG(LS(LC(NUMBER_4)))  &trans    &trans  &kp LG(LS(F5))  &kp LS(LA(C_VOL_DN))  &kp LS(LA(C_VOL_UP))
+&trans  &trans  &trans  &kp LA(LG(F5))  &trans         &trans                                      &trans                &trans                &trans                &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans         &trans                                      &trans                &trans                &trans                &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans         &trans                                      &trans                &trans                &trans                &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans         &trans                    &trans    &trans  &trans                &trans                &trans                &trans  &trans  &trans
+                        &kp LA(LEFT)    &kp LA(RIGHT)  &kp LG(LS(LC(NUMBER_4)))  &trans    &trans  &kp LG(LS(NUMBER_5))  &kp LS(LA(C_VOL_DN))  &kp LS(LA(C_VOL_UP))
             >;
         };
     };
