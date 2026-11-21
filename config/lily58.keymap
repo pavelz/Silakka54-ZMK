@@ -313,11 +313,11 @@
 
         macos {
             bindings = <
-&kp LA(LS(LG(NUMBER_5)))  &trans  &trans  &trans         &trans        &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans                    &trans  &trans  &trans         &trans        &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans                    &trans  &trans  &trans         &trans        &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
-&trans                    &trans  &trans  &trans         &trans        &kp LC(LS(LG(NUMBER_4)))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                          &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(NUMBER_0)          &trans    &trans  &trans  &trans  &trans
+&kp LS(LG(NUMBER_5))  &trans  &trans  &trans         &trans        &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &trans  &trans  &trans         &trans        &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &trans  &trans  &trans         &trans        &trans                                      &trans  &trans  &trans  &trans  &trans  &trans
+&trans                &trans  &trans  &trans         &trans        &kp LC(LS(LG(NUMBER_4)))  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                      &kp LG(MINUS)  &kp LG(PLUS)  &kp LG(NUMBER_0)          &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
