@@ -263,11 +263,11 @@
 
         layer_4 {
             bindings = <
-&kp F12    &kp F1     &kp F2                &kp F3                 &kp F4                &kp F5                                   &kp F6                &kp F7                 &kp F8            &kp F9                &kp F10                &kp F11
-&kp GRAVE  &kp EXCL   &kp AT                &kp POUND              &kp DOLLAR            &kp PERCENT                              &kp CARET             &kp AMPS               &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&kp TILDE  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET     &kp RIGHT_PARENTHESIS                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PAGE_UP            &kp C_AC_HOME
-&kp UNDER  &kp EQUAL  &kp MINUS             &kp PLUS               &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS         &kp PLUS              &kp PAGE_DOWN          &kp END
-                                            &kp C_BRIGHTNESS_DEC   &kp C_BRIGHTNESS_INC  &trans                 &trans    &trans  &kp K_MUTE            &kp C_VOL_DN           &kp C_VOLUME_UP
+&kp F12    &kp F1     &kp F2                &kp F3                 &kp F4                &kp F5                               &kp F6                &kp F7                 &kp F8            &kp F9                &kp F10                &kp F11
+&kp GRAVE  &kp EXCL   &kp AT                &kp POUND              &kp DOLLAR            &kp PERCENT                          &kp CARET             &kp AMPS               &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
+&kp TILDE  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp PAGE_UP            &kp C_AC_HOME
+&kp UNDER  &kp EQUAL  &kp MINUS             &kp PLUS               &kp LEFT_BRACE        &kp RIGHT_BRACE    &trans    &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS         &kp PLUS              &kp PAGE_DOWN          &kp END
+                                            &kp C_BRIGHTNESS_DEC   &kp C_BRIGHTNESS_INC  &trans             &trans    &trans  &kp K_MUTE            &kp C_VOL_DN           &kp C_VOLUME_UP
             >;
         };
 
